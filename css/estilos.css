@@ -4,8 +4,56 @@ selector{
 }
 */
 body{
-    background-color: rgb(220, 183, 255);
+    background-color: rgba(220, 183, 255, 0.493);
 }
 h1,h2{
     text-align: center;
+}
+header{
+    background-image: url('../img/pizzamorixe000002.jpg');
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+nav {
+    background-color: transparent;
+    height: 50px;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+}
+
+nav ol li{
+    background-color: rgb(34, 34, 33);
+    display: inline;
+    color: white;
+    padding: 15px;
+    margin: 0px 10px;
+}
+article{
+    padding-top: 180px;
+    /* background: linear-gradient(#ff000063, yellow);
+    linear-gradient degrada el fondo en colores que elijas */
+}
+
+nav ol li a{
+    /* Esto, en este caso, modifica el ancla pq' en el index esta escrito así */
+    text-decoration: none;
+    color: white;
+}
+
+nav ol li:hover{
+    /* El hover modifica los box cuando pasa el cursor encima */
+    background-color: rgb(185, 115, 250);
+    color: black;
+    box-shadow: 5px 3px 5px black;
+
 }
