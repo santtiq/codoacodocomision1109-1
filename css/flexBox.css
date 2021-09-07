@@ -1,0 +1,42 @@
+#justify{
+   display: flex;
+  /* justify-content: center; para centrar */
+  /* justify-content: flex-end; /* para mandarlo a la izquierda */
+  /* justify-content: flex-start; para mandarlo al final  */
+  /* justify-content: space-around; separa en cuadrados dejando la distancia igual en todos lados*/
+  justify-content: space-between; /* mismo espacio entre las box */
+  /* justify-content: space-evenly; mismo espacio entre y al inicio y final */
+
+}
+
+.primer{
+    width: 150px;
+    height: 270px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.primer::after{
+    content: 'Esto está depue';
+    color: darkcyan ;
+    font-size: 20px;
+}
+
+.primer::before{
+    content: 'Esto está antes';
+    color: cornsilk;
+}
+
+.primer::first-letter{
+    color: darkcyan;
+    font-size: 20px;
+    
+}
+
+span{
+    display: block;
+}
+
+.tradingview-widget-container{
+    margin-top: 5%;
+}

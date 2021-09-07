@@ -1,0 +1,73 @@
+body{
+    background-color: rgba(137, 43, 226, 0.301);
+}
+
+@keyframes mover {
+    from{top: 70px;}
+    to{top: 1250px;}
+}
+
+@keyframes patear {
+    from{left: 0px;}
+    to{left: 1000px;}
+    /* from{opacity: 0;}
+    to{opacity: 1;} */
+}
+
+@keyframes otra {
+    0%{color: blanchedalmond;}
+    25%{color: blue;}
+    50%{color: cadetblue;}
+}
+
+@keyframes menu {
+    0%{
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    100%{
+        padding: 20px;
+        background-color:white;
+        color: black;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+}
+
+#flecha{
+    left: 10%;
+    /* top: 15%; */
+    position: absolute;
+    /* animation-name: mover; */
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    /* animation: mover 5s infinite; */
+    /* animation-direction: reverse; */
+}
+
+#pelota:hover{
+    top: 15%;
+    position: absolute;
+    animation-name: patear;
+    animation-duration: 2s;
+    /* animation-delay: 0.2s; */
+    /* animation-iteration-count: infinite; */
+}
+
+ul li{
+    top: 50%;
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+ul li:hover{
+    animation-name: menu;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+
+}
