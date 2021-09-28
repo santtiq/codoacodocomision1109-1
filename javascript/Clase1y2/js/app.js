@@ -76,8 +76,8 @@
     */
 
     /*
-    let num = parseInt(prompt("Ingresa el primer número")); //parseInt te convierte el string a num
-    let num2 = parseInt(prompt("Ingresa el segundo número")); //parseInt te convierte el string a num
+    let num = parseInt(prompt("Ingresa el primer número")); //parseInt te convierte el string a int
+    let num2 = parseInt(prompt("Ingresa el segundo número")); //parseInt te convierte el string a int
 
     let resultado = "<p>El resultado de: " + num + " y " + num2 +" es: " + (num +num2)+ "</p>";
     elemento.innerHTML=resultado;11
