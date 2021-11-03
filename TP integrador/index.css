@@ -8,7 +8,6 @@ body{
     height: 100%;
     font-family: sans-serif;
     max-width: 1920px;
-
 }
 
 span{
@@ -19,12 +18,9 @@ span{
 .navbar{
     background-color: #353A40;
     height: 90px;
-    /* max-width: 1920px; */
     width: 100%;
     top: 0;
     left: 0;
-    /* position: fixed;
-    z-index: 2; */
 }
 
 .nav{
@@ -37,7 +33,6 @@ span{
     color: white;
     text-decoration: none;
     letter-spacing: .5px;
-
 }
 
 .colorgray{
@@ -52,21 +47,15 @@ span{
     letter-spacing: .5px;
 }
 
-.logo{
-    font-size: 19px;
-    line-height: 80px;
-    margin-right: 100px;
-    width: 100%;
-}
-
 .nav-img{
     display: flex;
-    line-height: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
     height: 80px;
     width: 120px;
+    margin-left: 100px;
 }
+
 .navmenu{
     display: flex;
     margin-right: 40px;
@@ -81,6 +70,41 @@ span{
     text-align: center;
 }
 
+.navmenulink:hover, .navmenulink:active{
+    color: rgb(0, 0, 0);
+    background-color: #ffc800;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 0 3px;
+}
+
+.colorgreen:hover, .colorgreen:active{
+    background-color: rgb(7, 190, 7);
+    color: white;
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 0 3px;
+}
+
+.nav-link:hover, .nav-link:active{
+    color: white;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
 .container1{
     position: relative;
     display: flex;
@@ -92,7 +116,7 @@ span{
 .container1 img{
     display: flex;
     background-color: rgba(0, 0, 0, 0.158);
-    filter: brightness(0.6);
+    filter: brightness(0.4);
     width: 100%;
     height: 100%;
 }
@@ -107,76 +131,45 @@ span{
 .container1 .texto1 h1{
     text-align: end;
     margin-top: 18%;
-    margin-right: 5%;
-    font-size: 50px;
+    padding-right: 5%;
+    padding-left: 55%;
+    font-size: 400%;
 
 }
 
 .container1 .texto1 .bsas{
     text-align: end;
-    margin-top: 2%;
-    margin-left: 60%;
-    width: 35%;
-    font-size: 20px;
+    margin-top: 1%;
+    padding-right: 5%;
+    padding-left: 55%;
+    font-size: 150%;
     line-height: 1.3em;
 }
 
 .container1 .texto1 .button2{
-    display: flex;
-    align-items: center;
-
-    margin: 0 0;
-    margin-left: 68%;
-    margin-top: 0.5%;
-
+    padding-top: 1%;
+    text-align: end;
+    padding-right: 5%;
 }
 
-.der, .izq{    
-    display: flex;
-    width: 14rem;
-    padding: 0.5rem 0;
-}
-
-.izq{
-    margin-left: 3.5rem;
-}
-
-.der{
-    margin-right: 5.8rem;
-}
-
-.container1 .texto1 .button2 .izq .buttonA{
-    margin: 0 0;
-    width: 100%;
+.container1 .texto1 .button2 .button-transp{
+    background-color: transparent;
+    color: white;
     border: 1px solid white;
-    border-radius: 5px;
-    padding: 3%;
-    display: flex;
-    justify-content: end;
-    text-decoration: none;
-    text-align: center;
+    border-radius: 3px;
     font-size: 20px;
-    padding: 0.7rem 0;
-
+    padding: 0.5em 1em;
+    cursor: pointer;
 }
-.container1 .texto1 .button2 .der .buttonB{
-    margin: 0 0;
-    width: 100%;
-    border: 1px solid #26A843;
+
+.container1 .texto1 .button2 .button-green{
     background-color: #26A843;
     color: white;
-    border-radius: 5px;
-    padding: 3%;
-    display: flex;
-    text-decoration: none;
-    text-align: center;
+    border: 1px solid #26A843;
+    border-radius: 3px;
     font-size: 20px;
-    padding: 0.7rem 0;
-}
-
-
-.container1 .texto1 .button2 a p{
-    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
 }
 
 .container2{
@@ -195,7 +188,6 @@ span{
 
 .containercard{
     width: 100%;
-    max-width: 1920px;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -289,6 +281,7 @@ span{
 
 .container3 .fotito{
     width: 50%;
+    height: 100%;
 }
 
 .container3 .texto{
@@ -319,25 +312,18 @@ span{
 }
 
 .container3 .texto .button3{
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 10px;
+    padding-top: 1%;
+    padding-left: 2%;
 }
 
-.container3 .texto .button3 a{
-    text-decoration: none;
-}
-
-.container3 .texto .button3 a p{
+.container3 .texto .button3 button{
+    font-size: 20px;
+    padding: 0.5em 1em;
     border: 1px solid white;
+    color: white;
     border-radius: 4px;
-    padding: 6.5px;
-    width: 160px;
-    height: 15%;
-    text-align: center;
-    font-size: 1.3em;
-    list-style: none;
-    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .container4{
@@ -357,17 +343,17 @@ form{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 900px;
     padding: 0 1rem;
 }
 
 .field{
     display: flex;
     flex-direction: column;
-    width: 25rem;
-    margin: 0rem 1rem;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
+    width: 60%;
+    margin: 0em 1em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-left: 20%;
     justify-content: center;
 
 }
@@ -379,24 +365,24 @@ form{
     padding-left: 0.5rem;
     border-radius: 5px;
     border: 1px solid black;
+    align-items: center;
 }
 
 .textbox{    
     display: flex;
     flex-direction: column;
-    width: 96%;
+    width: 60%;
 }
 
 .textbox textarea{
     margin: 0 0;
-    font-size: 1.1rem;
-
+    font-size: 1.4em;
     min-width: 100%;
     max-width: 100%;
-    min-height: 5rem;
-    max-height: 15rem;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
+    min-height: 5em;
+    max-height: 15em;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
     border-radius: 5px;
 }
 
@@ -415,7 +401,7 @@ form{
 .submit button{
     margin: 0 0;
     font-size: 1.1rem;
-    padding: 0.5rem 24.5rem;
+    padding: 0.5rem 25rem;
     border-radius: 5px;
     background-color: #96C93E;
     color: white;
@@ -427,6 +413,7 @@ form{
     margin: 0 auto;
     display: flex;
     width: 100%;
+    padding: 0;
     background-color: #1A3745;
 }
 
@@ -442,22 +429,1293 @@ form{
     width: 100%;
     justify-content: center;
     height: 5rem;
+    padding: 0;
 }
 
 .container6 .footer ul li{
     margin: 0 0;
     display: flex;
     flex-direction: column;
-    width: 9rem;
-    margin: 0rem 1rem;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 1em 3em;
 }
 
 .container6 .footer ul li a{
     text-decoration: none;
     color: white;
+}
+
+
+@media (max-width: 480px){
+    body{
+        width: 100%;
+        padding-top: 60px;
+    }
+    
+    .navbar{
+        background-color: #353A40;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .nav-img{
+        padding-bottom: 0px;
+        height: 55px;
+        width: 80px;
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+
+    .navmenu{
+        flex-direction: column;
+        align-items:center;
+        margin: 0px;
+        background-color: rgb(48, 48, 58);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .navmenuitem{
+        line-height: 70px;
+    }
+    
+    .navmenulink:hover,
+    .navmenulink:active{
+        background-color: none;
+        color: rgb(214, 226, 144);
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-top: 0px;
+    }
+    
+    .nav-menu_visible{
+        left: 0;
+    }
+
+
+    .container1{
+        justify-content:center;
+    }
+
+    .container1 .texto1 h1{
+        text-align: center;
+        margin: 0 0;
+        margin-top: 15%;
+        margin-right: 0px;
+        padding: 0 0;
+        font-size: 30px;
+    }
+
+    .container1 .texto1 .bsas{
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        font-size: 13px;
+        padding: 0 10px;
+        display: none;
+    }
+    
+    .container1 .texto1 .button2{
+        padding-right: 0px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .container1 .texto1 .button2 .button-transp{
+        font-size: 15px;
+        padding: 0.5em 1em;
+    }
+    
+    .container1 .texto1 .button2 .button-green{
+        font-size: 15px;
+        padding: 0.5em 1em;
+    }
+
+    .container2{
+        padding: 6% 0;
+    }
+    
+    .container2 div .tit2{
+        font-size: 0.8em;
+    }
+    
+    .container2 div .tit3{
+        font-size: 1.6em;
+    }
+
+    .containercard{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 2%;
+        overflow: scroll;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card{
+        width: 300px;
+        height: 500px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px 10px 20px 20px;
+        transition: all 0.25s;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card h4{
+        padding: 0 1%;
+        font-size: 21px;
+    }
+    
+    .containercard .card p{
+        font-size: 14px;
+    }
+    
+    .containercard .card h6{
+        margin-top: 2%;
+    }
+    
+    .containercard .card .js{
+        font-size: 11px;
+    }
+    
+    .containercard .card .react{
+        font-size: 11px;
+    }
+    
+    .containercard .card .business{
+        font-size: 11px;
+    }
+    
+    .containercard .card .startups{
+        font-size: 11px;
+        padding-right: 2px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-wrap: none;
+        text-align: center;
+    }
+
+    .container3 .fotito{
+        width: 100%;
+    }
+
+    .container3 .texto{
+        width: 100%;
+        display: block;
+        background-color: #353A40;
+        border-left: none;
+    }
+
+    .container3 .texto p, .container3 .texto h2{
+        margin: 0% 2%;
+        padding-top: 2%;
+    }
+
+    .container3 .texto p{
+        color: white;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .container3 .texto h2{
+        color: white;
+        font-size: 20px;
+    }
+
+    .container3 .fotito img{
+        width: 100%;
+        height: 220px;
+    }
+
+    .container3 .texto .button3{
+        padding-top: 3%;
+        padding-left: 0%;
+        padding-bottom: 4%;
+    }
+    
+    .container3 .texto .button3 button{
+        font-size: 15px;
+    }
+
+    .container4 .subtit{
+        font-size: 1.1em;
+        text-align: center;
+        padding: 0 1em;
+    }
+    
+    .field{
+        margin: 0rem 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .textbox{
+        width: 95%;
+    }
+
+    .submit{
+        margin-top: 0.5rem;
+    }
+    
+    .submit button{
+        font-size: 150%;
+        padding: 0.5em 3em;
+    } 
+
+    .container6{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 628px){
+    
+    .container1 .texto1 .bsas{
+        display: none;
+    }
+
+}
+
+@media (min-width:481px) and (max-width: 768px){
+    body{
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .navbar{
+        background-color: #353A40;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .nav-img{
+        padding-bottom: 0px;
+        height: 55px;
+        width: 80px;
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+
+    .navmenu{
+        flex-direction: column;
+        align-items:center;
+        margin: 0px;
+        background-color: rgb(48, 48, 58);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .navmenuitem{
+        line-height: 70px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    
+    .navmenulink:hover,
+    .navmenulink:active{
+        background-color: none;
+        color: rgb(214, 226, 144);
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-top: 0px;
+        font-size: 30px;
+        padding: 0 0;
+        cursor: pointer;
+        margin-right: 100px;
+    }
+    
+    .nav-menu_visible{
+        left: 0;
+    }
+
+
+    .container1 .texto1 h1{
+        text-align: center;
+        margin: 0 0;
+        padding: 0 0;
+        margin-top: 10%;
+        margin-right: 0%;
+        padding: 3% 0;
+        font-size: 40px;
+    }
+    
+    .container1 .texto1 .bsas{
+        margin: 0 0;
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        font-size: 18px;
+        line-height: 150%;
+        padding: 0 50px;
+        
+    }
+    
+    .container1 .texto1 .button2{
+        padding-top: 1%;
+        padding-right: 0px;
+        text-align: center;
+        
+    }
+    
+    .container1 .texto1 .button2 .button-transp{
+        font-size: 100%;
+        padding: 0.5em 1em;
+    }
+    
+    .container1 .texto1 .button2 .button-green{
+        font-size: 100%;
+        padding: 0.5em 1em;
+    }
+
+    .container2{
+        padding: 3% 0;
+    }
+    
+    .container2 div .tit2{
+        font-size: .7em;
+    }
+    
+    .container2 div .tit3{
+        font-size: 1.5em;
+    }
+
+    .containercard{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 2%;
+        overflow: scroll;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card{
+        width: 350px;
+        height: 600px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 5px 10px 20px 20px;
+        transition: all 0.25s;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card h4{
+        padding: 0 1%;
+        font-size: 150%;
+    }
+    
+    .containercard .card p{
+        font-size: 100%;
+    }
+    
+    .containercard .card h6{
+        margin-top: 2%;
+    }
+    
+    .containercard .card .js{
+        font-size: 80%;
+    }
+    
+    .containercard .card .react{
+        font-size: 80%;
+    }
+    
+    .containercard .card .business{
+        font-size: 80%;
+    }
+    
+    .containercard .card .startups{
+        font-size: 80%;
+        padding-right: 3px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-wrap: none;
+        text-align: center;
+    }
+
+    .container3 .fotito{
+        width: 100%;
+    }
+
+    .container3 .texto{
+        width: 100%;
+        height: 390px;
+        display: block;
+        background-color: #353A40;
+        border-left: none;
+    }
+
+    .container3 .texto p, .container3 .texto h2{
+        margin: 0% 2%;
+        padding-top: 2%;
+    }
+
+    .container3 .texto p{
+        color: white;
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .container3 .texto h2{
+        color: white;
+        font-size: 40px;
+    }
+
+    .container3 .fotito img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .container3 .texto .button3{
+        padding-top: 3%;
+        padding-left: 0%;
+        padding-bottom: 4%;
+    }
+    
+    .container3 .texto .button3 button{
+        font-size: 20px;
+    }
+
+    .container4{
+        text-align: center;
+    }
+    
+    .submit{
+        margin-top: 0.5rem;
+    }
+    
+    .submit button{
+        font-size: 100%;
+        padding: 0.5em 12.5em;
+    }
+    
+    .field{
+        width: 45rem;
+    }
+
+    .field input{
+        width: 77%;
+        margin: 0 0;
+    }
+    
+    .textbox label{
+        font-size: 0.9rem;
+    }
+
+    .container6{
+        display: none;
+    }
+}
+
+@media (min-width:769px) and (max-width:1023px){
+
+    body{
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .navbar{
+        background-color: #353A40;
+        height: 80px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .nav-img{
+        padding-bottom: 0px;
+        height: 80px;
+        width: 120px;
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+
+    .navmenu{
+        flex-direction: column;
+        align-items:center;
+        margin: 0px;
+        background-color: rgb(48, 48, 58);
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .navmenuitem{
+        line-height: 70px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    
+    .navmenulink:hover,
+    .navmenulink:active{
+        background-color: none;
+        color: rgb(214, 226, 144);
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-top: 0px;
+        font-size: 30px;
+        padding: 0 0;
+        cursor: pointer;
+        margin-right: 150px;
+    }
+    
+    .nav-menu_visible{
+        left: 0;
+    }
+
+
+    .container1 .texto1 h1{
+        text-align: center;
+        margin-top: 7%;
+        margin-right: 0%;
+        padding: 1% 0;
+        font-size: 50px;
+    }
+    
+    .container1 .texto1 .bsas{
+        margin: 0 0;
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        padding: 0 40px;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    
+    .container1 .texto1 .button2{
+        margin: 0%;
+        padding-right: 0px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    .container1 .texto1 .button2 .button-transp{
+        font-size: 20px;
+        padding: 0.5em 1em;
+    }
+    
+    .container1 .texto1 .button2 .button-green{
+        font-size: 20px;
+        padding: 0.5em 1em;
+    }
+
+    .container2{
+        padding: 3% 0;
+    }
+    
+    .container2 div .tit2{
+        font-size: 1.5em;
+    }
+    
+    .container2 div .tit3{
+        font-size: 3.0em;
+    }
+
+    .containercard{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin: auto;
+        margin-bottom: 2%;
+        overflow: scroll;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card{
+        width: 400px;
+        height: 700px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 5px 10px 20px 20px;
+        transition: all 0.25s;
+    } /*FALTA REVISAR ESTE */
+    
+    .containercard .card h4{
+        padding: 0 1%;
+        font-size: 200%;
+    }
+    
+    .containercard .card p{
+        font-size: 120%;
+    }
+    
+    .containercard .card h6{
+        margin-top: 2%;
+    }
+    
+    .containercard .card .js{
+        font-size: 90%;
+    }
+    
+    .containercard .card .react{
+        font-size: 90%;
+    }
+    
+    .containercard .card .business{
+        font-size: 90%;
+    }
+    
+    .containercard .card .startups{
+        font-size: 90%;
+        padding-right: 3px;
+    }
+
+    .container3{
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-wrap: none;
+        text-align: center;
+    }
+
+    .container3 .fotito{
+        width: 100%;
+    }
+
+    .container3 .texto{
+        width: 100%;
+        height: 470px;
+        display: block;
+        background-color: #353A40;
+        border-left: none;
+    }
+
+    .container3 .texto p, .container3 .texto h2{
+        margin: 0% 2%;
+        padding-top: 2%;
+    }
+
+    .container3 .texto p{
+        color: white;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .container3 .texto h2{
+        color: white;
+        font-size: 50px;
+    }
+
+    .container3 .fotito img{
+        width: 100%;
+        height: 600px;
+    }
+
+    .container3 .texto .button3{
+        padding-top: 3%;
+        padding-left: 0%;
+        padding-bottom: 4%;
+    }
+    
+    .container3 .texto .button3 button{
+        font-size: 30px;
+    }
+
+    .container4{
+        width: 100%;
+    }
+    
+    .container4 .subtit{
+        display: flex;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .submit{
+        margin-top: 0.5rem;
+    }
+    
+    .submit button{
+        font-size: 30px;
+        padding: 0.5em 10.5em;
+    }
+    
+    .field{
+        width: 59.7rem;
+    }
+    
+    .field input{
+        margin: 0 0;
+        font-size: 1.9rem;
+        height: 3rem;
+        width: 77%;
+    }    
+
+    .textbox label{
+        font-size: 1.3rem;
+    }
+
+    .textbox textarea{
+        font-size: 1.7rem;
+    }
+
+    .container6{
+        display: none;
+    }
+    
+    .submit button{
+        padding: 0.5em 6em;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1199px){
+    
+    body{
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .navbar{
+        background-color: #353A40;
+        height: 80px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .nav-img{
+        padding-bottom: 0px;
+        height: 60px;
+        width: 100px;
+        margin-top: .5%;
+        margin-left: 30px;
+    }
+
+    .navmenuitem{
+        line-height: 70px;
+        font-size: 18px;
+        padding-top: .5%;
+        margin: 0 0
+    }
+    
+    .navmenu{
+        margin-right: 10px;
+    }
+    
+    .navmenulink{
+        padding: 0 8px;
+    }
+
+
+    .container1 .texto1 h1{
+        text-align: end;
+        margin-top: 15%;
+        margin-right: 10%;
+        padding: 1% 0;
+        font-size: 40px;
+    }
+    
+    .container1 .texto1 .bsas{
+        margin: 0 auto;
+        text-align: end;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        padding-left: 40%;
+        padding-right: 10%;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    
+    .container1 .texto1 .button2{
+        margin: 0%;
+        padding-right: 10%;
+        padding-top: 20px;
+        text-align: end;
+    }
+    
+    .container1 .texto1 .button2 .button-transp{
+        font-size: 20px;
+        padding: 0.5em 1em;
+    }
+    
+    .container1 .texto1 .button2 .button-green{
+        font-size: 20px;
+        padding: 0.5em 1em;
+    }
+
+    .container2{
+        padding: 0 0;
+        padding-top: 2%;
+    }
+    
+    .container2 div .tit2{
+        font-size: 1em;
+    }
+    
+    .container2 div .tit3{
+        font-size: 2.0em;
+    }
+
+    .containercard{
+        width: 100%;
+        overflow: scroll;
+    }
+    
+    .containercard .card{
+        width: 400px;
+        height: 650px;
+    } 
+    
+    .containercard .card h4{
+        padding: 0 1%;
+        font-size: 30px;
+    }
+    
+    .containercard .card p{
+        font-size: 19px;
+    }
+    
+    .containercard .card h6{
+        margin-top: 2%;
+    }
+    
+    .containercard .card .js{
+        font-size: 15px;
+    }
+    
+    .containercard .card .react{
+        font-size: 15px;
+    }
+    
+    .containercard .card .business{
+        font-size: 14px;
+    }
+    
+    .containercard .card .startups{
+        font-size: 15px;
+        padding-right: 3px;
+    }
+
+    .container3{
+        width: 100%;
+        height: 450px;
+        flex-wrap: none;
+        text-align: center;
+    }
+
+    .container3 .fotito{
+        width: 50%;
+        height: 100%;
+    }
+
+    .container3 .texto{
+        width: 50%;
+        background-color: #353A40;
+        border-left: none;
+    }
+
+    .container3 .texto p, .container3 .texto h2{
+        margin: 0% 2%;
+        padding-top: 2%;
+    }
+
+    .container3 .texto p{
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: start;
+    }
+
+    .container3 .texto h2{
+        color: white;
+        font-size: 40px;
+        text-align: start;
+        padding-top: 3%;
+    }
+
+    .container3 .fotito img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .container3 .texto .button3{
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-bottom: 4%;
+        text-align: start;
+    }
+    
+    .container3 .texto .button3 button{
+        font-size: 20px;
+    }
+
+    .container4{
+        width: 100%;
+    }
+    
+    .container4 .subtit{
+        display: flex;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .submit{
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .submit button{
+        font-size: 25px;
+        padding: 0.3em 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .field{
+        width: 70%;
+        margin: 0 0;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        margin-left: 15%;
+    }
+    
+    .field input{
+        font-size: 20px;
+        padding: 0.7em 0.2em;
+        padding-left: 0.5rem;
+    }
+
+    .textbox{    
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        font-size: 1px
+    }
+
+    .textbox label{
+        font-size: 1rem;
+    }
+
+    .textbox textarea{
+        font-size: 20px;
+    }
+    
+    .container6 .footer ul{
+        height: 100%;
+        padding: 0;
+    }
+    
+    .container6 .footer ul li{
+        margin: 0 0;
+        width: 100%;
+        margin: 0rem 0rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        padding: 1em 1em;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1440px){
+        
+    body{
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .navbar{
+        background-color: #353A40;
+        height: 80px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .nav-img{
+        padding-bottom: 0px;
+        height: 60px;
+        width: 100px;
+        margin-top: .5%;
+        margin-left: 30px;
+    }
+
+    .navmenuitem{
+        line-height: 70px;
+        font-size: 18px;
+        padding-top: .5%;
+        margin: 0 0
+    }
+    
+    .navmenu{
+        margin-right: 10px;
+    }
+    
+    .navmenulink{
+        padding: 0 8px;
+    }
+
+
+    .container1 .texto1 h1{
+        text-align: end;
+        margin-top: 15%;
+        margin-right: 10%;
+        padding: 1% 0;
+        font-size: 250%;
+    }
+    
+    .container1 .texto1 .bsas{
+        margin: 0 auto;
+        text-align: end;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+        padding-left: 40%;
+        padding-right: 10%;
+        font-size: 135%;
+        line-height: 120%;
+    }
+    
+    .container1 .texto1 .button2{
+        margin: 0%;
+        padding-right: 10%;
+        padding-top: 20px;
+        text-align: end;
+    }
+    
+    .container1 .texto1 .button2 .button-transp{
+        font-size: 120%;
+        padding: 0.5em 1em;
+    }
+    
+    .container1 .texto1 .button2 .button-green{
+        font-size: 120%;
+        padding: 0.5em 1em;
+    }
+
+    .container2{
+        padding: 0 0;
+        padding-top: 2%;
+    }
+    
+    .container2 div .tit2{
+        font-size: 1em;
+    }
+    
+    .container2 div .tit3{
+        font-size: 2.0em;
+    }
+
+    .containercard{
+        width: 100%;
+        height: 650px;
+    }
+    
+    .containercard .card{
+        width: 400px;
+        height: 650px;
+    } 
+
+    .containercard .card h4{
+        padding: 0 1%;
+        font-size: 30px;
+    }
+    
+    .containercard .card p{
+        font-size: 19px;
+    }
+    
+    .containercard .card h6{
+        margin-top: 2%;
+    }
+    
+    .containercard .card .js{
+        font-size: 15px;
+    }
+    
+    .containercard .card .react{
+        font-size: 15px;
+    }
+    
+    .containercard .card .business{
+        font-size: 14px;
+    }
+    
+    .containercard .card .startups{
+        font-size: 15px;
+        padding-right: 3px;
+    }
+
+    .container3{
+        width: 100%;
+        height: 450px;
+        flex-wrap: none;
+        text-align: center;
+    }
+
+    .container3 .fotito{
+        width: 50%;
+        height: 100%;
+    }
+
+    .container3 .texto{
+        width: 50%;
+        background-color: #353A40;
+        border-left: none;
+    }
+
+    .container3 .texto p, .container3 .texto h2{
+        margin: 0% 2%;
+        padding-top: 2%;
+    }
+
+    .container3 .texto p{
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: start;
+    }
+
+    .container3 .texto h2{
+        color: white;
+        font-size: 40px;
+        text-align: start;
+        padding-top: 3%;
+    }
+
+    .container3 .fotito img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .container3 .texto .button3{
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-bottom: 4%;
+        text-align: start;
+    }
+    
+    .container3 .texto .button3 button{
+        font-size: 20px;
+    }
+
+    .container4{
+        width: 100%;
+    }
+    
+    .container4 .subtit{
+        display: flex;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .submit{
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .submit button{
+        font-size: 25px;
+        padding: 0.3em 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .field{
+        width: 70%;
+        margin: 0 0;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        margin-left: 15%;
+    }
+    
+    .field input{
+        font-size: 20px;
+        padding: 0.7em 0.2em;
+        padding-left: 0.5rem;
+    }
+
+    .textbox{    
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        font-size: 1px
+    }
+
+    .textbox label{
+        font-size: 1rem;
+    }
+
+    .textbox textarea{
+        font-size: 20px;
+    }
+    
+    .container6 .footer ul{
+        height: 4rem;
+        padding: 0;
+    }
+    
+    .container6 .footer ul li{
+        margin: 0 0;
+        width: 100%;
+        margin: 0 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 1em .5em;
+        align-items: center;
+    }
+
+    .container6 .footer ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 0 2em;
+        width: max-content;     
+    }
 }

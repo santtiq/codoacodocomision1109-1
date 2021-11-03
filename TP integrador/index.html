@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/099e90f9d5.js" crossorigin="anonymous"></script>
+    <title>Conferencia Buenos Aires</title>
 </head>
 
 <body>
     <div class="navbar">
         <nav class="nav">
             <img src="./img/codoacodo.png" class="nav-img" alt="">
-            <!-- <a href="" class="logo nav-link"></a> -->
+            <button class="nav-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="navmenu nav-menu_visible">
                 <li class="navmenuitem">
                     <a href="" class="navmenulink nav-link">La conferencia</a>
@@ -39,16 +42,12 @@
             <h1>Conf Bs As</h1>
             <p class="bsas"> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
             <div class="button2">
-                <div class="izq">
-                    <a href="" class="buttonA"><p>Quiero ser orador</p></a>
-                </div>
-                <div class="der">
-                    <a href="" class="buttonB"><p>Comprar tickets</p></a>
-                </div>
+                <button class="button-transp">Quiero ser orador</button>
+                <button class="button-green">Comprar tickets</button>
             </div>
         </div>
     </div>
-
+    
     <div class="container2">
         <div>
           <span class="tit2">CONOCE A LOS</span>
@@ -93,9 +92,9 @@
                 área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado
                 consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
             <div class="button3">
-                <a href=""><p>Conocé más</p></a>
+                <button>Conocé más</button>
             </div>
-            </div>
+        </div>
     </div>
 
 
@@ -115,14 +114,14 @@
     <div class="container5">
         <form>
             <div class="field">
-                <input type="text" name="nombre" placeholder="Nombre" required autocomplete>
+                <input type="text" name="nombre" placeholder="Nombre(s)" required autocomplete>
             </div>
             <div class="field">
                 <input type="text" name="apellidos" placeholder="Apellido(s)" required autocomplete>
             </div>
             <div class="textbox">
                 <textarea name="textbox" cols="30" rows="10" placeholder="Sobre qué quieres hablar?" required autocomplete></textarea>
-                <label >Recuerda incluir un título para tu charla</label>
+                <label>Recuerda incluir un título para tu charla</label>
             </div>
             <div class="submit">
                 <button>Enviar</button>
@@ -158,6 +157,6 @@
         </div>
     </div>
 
-
+<script src="./index.js"></script>
 </body>
 </html>
