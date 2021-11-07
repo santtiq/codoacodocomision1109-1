@@ -17,7 +17,7 @@ span{
 
 .navbar{
     background-color: #353A40;
-    height: 90px;
+    height: 79px;
     width: 100%;
     top: 0;
     left: 0;
@@ -33,18 +33,21 @@ span{
     color: white;
     text-decoration: none;
     letter-spacing: .5px;
+    padding: 1px 3px;
 }
 
 .colorgray{
     color: gray;
     text-decoration: none;
     letter-spacing: .5px;
+    padding: 1px 3px;
 }
 
 .colorgreen{
     color: rgb(7, 190, 7);
     text-decoration: none;
     letter-spacing: .5px;
+    padding: 1px 3px;
 }
 
 .nav-img{
@@ -63,27 +66,27 @@ span{
 }
 
 .navmenuitem{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     width: max-content;
     text-align: center;
+    padding: 1px 3px;
 }
 
 .navmenulink:hover, .navmenulink:active{
     color: rgb(0, 0, 0);
-    background-color: #ffc800;
-    transition: 0.5s;
+    background-color: #ffc800bd;
+    transition: 0.3s;
     border-radius: 2px;
-    padding: 0 3px;
+    padding: 1px 3px;
 }
 
 .colorgreen:hover, .colorgreen:active{
     background-color: rgb(7, 190, 7);
     color: white;
-    transition: 0.5s;
     border-radius: 2px;
-    padding: 0 3px;
+    padding: 1px 3px;
 }
 
 .nav-link:hover, .nav-link:active{
@@ -160,6 +163,11 @@ span{
     font-size: 20px;
     padding: 0.5em 1em;
     cursor: pointer;
+}
+
+.container1 .texto1 .button2 .button-transp a{
+    text-decoration: none;
+    color: white;
 }
 
 .container1 .texto1 .button2 .button-green{
@@ -337,6 +345,7 @@ span{
 
 .container5{
     padding: 1rem 0;
+
 }
 
 form{
@@ -415,6 +424,7 @@ form{
     width: 100%;
     padding: 0;
     background-color: #1A3745;
+    bottom: 0;
 }
 
 .footer{
@@ -443,6 +453,171 @@ form{
 .container6 .footer ul li a{
     text-decoration: none;
     color: white;
+}
+
+.container7{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+.containerCard{
+    width: 25%;
+    text-align: center;
+}
+
+.container7 .card1, .container7 .card2, .container7 .card3{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.containerCard .tituloCard{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 14%;
+}
+
+.containerCard .subtituloCard{
+    font-size: 1.2em;
+    padding: 7% 0%;
+}
+
+.containerCard .porcentajeDescuento{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 6%;
+}
+
+.containerCard .documentacionCard{
+    font-size: 1em;
+    color: gray;
+    padding-bottom: 16%;
+}
+
+.container7 .card1{
+    border: 2px solid mediumblue;
+}
+
+.container7 .card2{
+    border: 2px solid cadetblue;
+}
+
+.container7 .card3{
+    border: 2px solid goldenrod;
+}
+
+.container8{
+    padding: 0 0;
+}
+
+.container8 form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container8 .bySide{
+    display: flex;
+    width: 56%;
+}
+
+.container8 .bySide .halfBar{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 .5%;
+    padding-bottom: 1%;
+}
+
+.bySide .halfBar input{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: .4em;
+}
+
+.container8 .bar{
+    display: flex;
+    width: 56%;
+    padding: 0 .5em;
+    padding-bottom: 1em;
+}
+
+.container8 .bar input{
+    width: 100%;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding-left: .4em;
+}
+
+.container8 .halfBar .tipoTicket{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: .4em;
+}
+
+.tipoTicket option{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: .4em;
+}
+
+.totalPago{
+    width: 100%;
+    padding-top: 1%;
+}
+
+.totalPago div{
+    display: flex;
+    width: 56%;
+    padding: 0 .5em;
+    padding-bottom: 1em;
+}
+
+.totalPago input{
+    width: 100%;
+    background-color: #77caf7a4;
+    border: 1px solid #77caf7a4;
+    color: midnightblue;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding-left: .4em;
+}
+
+.botones{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.container8 .boton1, .container8 .boton2{
+    margin: 0 2em;
+    display: flex;
+}
+
+.container8 .boton1 button, .container8 .boton2 button{
+    margin: 0 0;
+    font-size: 1.3rem;
+    padding: .9rem 10rem;
+    border-radius: 5px;
+    background-color: #96C93E;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -566,7 +741,7 @@ form{
         margin: auto;
         margin-bottom: 2%;
         overflow: scroll;
-    } /*FALTA REVISAR ESTE */
+    }
     
     .containercard .card{
         width: 300px;
@@ -575,7 +750,7 @@ form{
         overflow: hidden;
         margin: 20px 10px 20px 20px;
         transition: all 0.25s;
-    } /*FALTA REVISAR ESTE */
+    } 
     
     .containercard .card h4{
         padding: 0 1%;
@@ -686,6 +861,125 @@ form{
     .container6{
         display: none;
     }
+
+    .container7{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 100%;
+        margin-top: 2%;
+    }
+    
+    .containerCard{
+        width: 50%;
+        padding: 2px 2px;
+        text-align: center;
+    }
+    
+    .containerCard .tituloCard{
+        font-size: 1em;
+        padding-top: 12%;
+    }
+    
+    .containerCard .subtituloCard{
+        font-size: .8em;
+        padding: 10% 0%;
+    }
+    
+    .containerCard .porcentajeDescuento{
+        font-weight: bold;
+        font-size: .8em;
+        padding-top: 0%;
+        padding-bottom: 10%;
+    }
+    
+    .containerCard .documentacionCard{
+        font-size: .7em;
+        color: gray;
+        padding-bottom: 10%;
+    }
+    
+    
+    .container8{
+        padding: 0 0;
+    }
+    
+    .container8 form{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .container8 .bySide{
+        display: block;
+        width: 100%;
+    }
+    
+    .container8 .bySide .halfBar{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 .5%;
+        padding-bottom: 1%;
+    }
+    
+    .bySide .halfBar input{
+        font-size: .9rem;
+    }
+    
+    .container8 .bar{
+        display: flex;
+        width: 100%;
+        padding: 0 .1em;
+        padding-bottom: .3em;
+    }
+    
+    .container8 .bar input{
+        font-size: .9em;
+        padding-left: .4em;
+    }
+    
+    .container8 .halfBar .tipoTicket{
+        font-size: .9rem;
+    }
+    
+    .tipoTicket option{
+        font-size: .9rem;
+    }
+    
+    .totalPago{
+        width: 100%;
+        padding-top: 1%;
+    }
+    
+    .totalPago div{
+        display: flex;
+        width: 100%;
+        padding: 0 .1em;
+        padding-bottom: .5em;
+    }
+    
+    .totalPago input{
+        font-size: .9em;
+        padding-left: .4em;
+    }
+    
+    .botones{
+        display: flex;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+    
+    .container8 .boton1, .container8 .boton2{
+        margin: 0 .5em;
+        display: flex;
+    }
+    
+    .container8 .boton1 button, .container8 .boton2 button{
+        margin: 0 0;
+        font-size: .9rem;
+        padding: .9rem 3rem;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 628px){
@@ -943,6 +1237,61 @@ form{
     .container6{
         display: none;
     }
+ 
+    .container7{
+        width: 100%;
+    }
+
+    .containerCard{
+        width: 30%;
+    }
+
+    .containerCard .tituloCard{
+        font-size: 1.3em;
+        padding-top: 10%;
+    }
+
+    .containerCard .subtituloCard{
+        font-size: 1em;
+    }
+
+    .containerCard .porcentajeDescuento{
+        font-size: 1em;
+    }
+
+    .containerCard .documentacionCard{
+        font-size: .8em;
+        padding-bottom: 12%;
+    }
+
+    .container8 .bySide{
+        width: 86%;
+    }
+
+    .container8 .bySide .halfBar{
+        padding-bottom: 2%;
+    }
+
+    .container8 .bar{
+        width: 86%;
+        padding: 0 0em;
+        padding-bottom: 1em;
+    }
+
+    .totalPago div{
+        width: 86%;
+        padding: 0 0em;
+    }
+
+    .container8 .boton1, .container8 .boton2{
+        margin: 0 1em;
+    }
+
+    .container8 .boton1 button, .container8 .boton2 button{
+        padding: .9rem 2rem;
+        font-size: 1em;
+    }
+
 }
 
 @media (min-width:769px) and (max-width:1023px){
@@ -1458,6 +1807,45 @@ form{
         margin-top: 0rem;
         padding: 1em 1em;
     }
+
+    .container7{
+        width: 70%;
+    }
+    
+    .containerCard{
+        width: 30%;
+        text-align: center;
+    }
+    
+    .container8 .bySide{
+        display: flex;
+        width: 56%;
+    }
+    
+    .container8 .bySide .halfBar{
+        padding-bottom: 2%;
+    }
+    
+    .container8 .bar{
+        width: 56.5%;
+    }
+    
+    .totalPago div{
+        width: 57%;
+    }
+    
+    .botones{
+        padding-bottom: 6.8%;
+    }
+    
+    .container8 .boton1, .container8 .boton2{
+        margin: 0 1em;
+    }
+
+    .container8 .boton1 button, .container8 .boton2 button{
+        padding: .9rem 5rem;
+    }
+
 }
 
 @media (min-width:1200px) and (max-width:1440px){
@@ -1708,14 +2096,49 @@ form{
         margin: 0 0;
         margin-bottom: 0;
         margin-top: 0;
-        padding: 1em .5em;
+        padding: 1em 0em;
         align-items: center;
     }
 
     .container6 .footer ul li a{
         text-decoration: none;
         color: white;
-        padding: 0 2em;
-        width: max-content;     
+        padding: 0 0em;
+        width: max-content;
+    }
+
+    .container7{
+        width: 70%;
+    }
+    
+    .containerCard{
+        width: 25%;
+        text-align: center;
+    }
+    
+    .container8 .bySide{
+        display: flex;
+        width: 56%;
+    }
+    
+    .container8 .bySide .halfBar{
+        padding-bottom: 2%;
+    }
+    
+    .container8 .bar{
+        width: 56.5%;
+    }
+    
+    .totalPago div{
+        width: 57%;
+    }
+    
+    .botones{
+        padding-bottom: 6.8%;
+    }
+    
+    
+    .container8 .boton1 button, .container8 .boton2 button{
+        padding: .9rem 6rem;
     }
 }
